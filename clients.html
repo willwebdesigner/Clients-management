@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Laundry</title>
+	<script src="jquery.js"></script>
+	<style>
+		input, select{display:block;}
+		h1{font-weight:bold;font-size: 26px;margin:10px 0;}
+		table tr td, table tr th{border:1px solid #000;}
+		table tr:nth-child(odd) {background:#e7e7e7;}
+	</style>
+</head>
+
+<body>
+	<section>
+		<form id="saveNewClient">
+			<h1>Dobavit novava klienta</h1>
+			<input type="name" name="fName" id="fName" placeholder="Im'a" />
+			<input type="name" name="lName" id="lName" placeholder="Familiya" />
+			<input type="tel" name="phone" id="phone" placeholder="Telephone" />
+			<input type="submit" value="sozdat" />
+		</form>
+	</section>
+	<section>
+		<h1>Vibrat klienta so spiska</h1>
+		<select id="list">
+			
+		</select>
+	</section>
+	<h1>Zikuy/Xiuv</h1>
+	<form id="clientSetAction">
+		<select>
+			<option value="zikuy">zikuy</option>
+			<option value="xiuv">xiuv</option>
+		</select>
+		<input type="number" name="cash" id="cash" min="0" />
+		<input type="submit" value="vnesti" />
+	</form>
+	<h1>Zapiska</h1>
+	<form id="note">
+		<textarea></textarea>
+	</form>
+	<h1>History</h1>
+	<table>
+		<tr>
+			<th colspan="2"></th>
+		</tr>
+	</table>
+	<input type="button" value="Ubrat klienta" />
+</body>
+<script src="clients.js"></script>
+</html>
