@@ -29,7 +29,6 @@ var clientsApp = {
 		$textarea.keyup(function(){
 			clientsApp.note($(this));
 		});
-		
 	},
 	note: function($this) {
 		clients[selected].note = $this.val();

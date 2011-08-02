@@ -1,0 +1,20 @@
+input, select{display:block;}
+h1{font-weight:bold;font-size: 26px;margin:10px 0;}
+table tr td, table tr th{border:1px solid #000;}
+table tr:nth-child(odd) {background:#e7e7e7;}
+
+section{
+    float:left;
+    margin-right:20px;
+}
+input,select,textarea,td,th{
+    border-radius: 6px;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+    -webkit-transition: all ease-in-out .25s;
+}
+:focus{
+    outline: none;
+    box-shadow: -1px -2px 5px yellow;
+}

@@ -3,13 +3,9 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Laundry</title>
+    <link href="style.css" rel="stylesheet" />
 	<script src="jquery.js"></script>
-	<style>
-		input, select{display:block;}
-		h1{font-weight:bold;font-size: 26px;margin:10px 0;}
-		table tr td, table tr th{border:1px solid #000;}
-		table tr:nth-child(odd) {background:#e7e7e7;}
-	</style>
+
 </head>
 
 <body>
@@ -28,26 +24,30 @@
 			
 		</select>
 	</section>
-	<h1>Credit/Debit</h1>
-	<form id="clientSetAction">
-		<select>
-			<option value="credit">credit</option>
-			<option value="debit">debit</option>
-		</select>
-		<input type="number" name="cash" id="cash" min="0" />
-		<input type="submit" value="add" />
-	</form>
-	<h1>Note</h1>
-	<form id="note">
-		<textarea></textarea>
-	</form>
-	<h1>History</h1>
-	<table>
-		<tr>
-			<th colspan="2"></th>
-		</tr>
-	</table>
-	<input type="button" value="Delete a client" />
+    <section>
+        <h1>Credit/Debit</h1>
+        <form id="clientSetAction">
+            <select>
+                <option value="credit">credit</option>
+                <option value="debit">debit</option>
+            </select>
+            <input type="number" name="cash" id="cash" min="0" />
+            <input type="submit" value="add" />
+        </form>
+    </section>
+    <section>
+        <h1>Note</h1>
+        <form id="note">
+            <textarea></textarea>
+        </form>
+        <h1>History</h1>
+        <table>
+            <tr>
+                <th colspan="2"></th>
+            </tr>
+        </table>
+        <input type="button" value="Delete a client" />
+    </section>
 </body>
 <script src="clients.js"></script>
 </html>
