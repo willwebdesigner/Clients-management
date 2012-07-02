@@ -1,53 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<title>Laundry</title>
-    <link href="style.css" rel="stylesheet" />
-	<script src="jquery.js"></script>
-
-</head>
-
-<body>
-	<section>
-		<form id="saveNewClient">
-			<h1>Add new client</h1>
-			<input type="name" name="fName" id="fName" placeholder="name" />
-			<input type="name" name="lName" id="lName" placeholder="last name" />
-			<input type="tel" name="phone" id="phone" placeholder="phone" />
-			<input type="submit" value="create" />
-		</form>
-	</section>
-	<section>
-		<h1>Choose an existing client</h1>
-		<select id="list">
-			
-		</select>
-	</section>
-    <section>
-        <h1>Credit/Debit</h1>
-        <form id="clientSetAction">
-            <select>
-                <option value="credit">credit</option>
-                <option value="debit">debit</option>
-            </select>
-            <input type="number" name="cash" id="cash" min="0" />
-            <input type="submit" value="add" />
-        </form>
-    </section>
-    <section>
-        <h1>Note</h1>
-        <form id="note">
-            <textarea></textarea>
-        </form>
-        <h1>History</h1>
-        <table>
-            <tr>
-                <th colspan="2"></th>
-            </tr>
-        </table>
-        <input type="button" value="Delete a client" />
-    </section>
-</body>
-<script src="clients.js"></script>
-</html>
+<form id="newClient">
+    <h1>Create New Client</h1>
+    <label for="fName">first name</label>
+    <input type="name" name="fName" id="fName" />
+    <label for="lName">last name</label>
+    <input type="name" name="lName" id="lName" />
+    <label for="lName">phone</label>
+    <input type="tel" name="phone" id="phone" />
+    <input type="submit" value="send" />
+</form>
+<h1>Select Client</h1>
+<select id="list">
+    
+</select>
+<form id="creditDebit">
+    <h1>Add Action to current client</h1>
+    <select>
+        <option value="credit">Credit</option>
+        <option value="debit">Debit</option>
+    </select>
+    <input type="number" name="cash" id="cash" min="0" />
+    <input type="submit" value="send" />
+</form>
+<h1>Actions of client</h1>
+<table>
+    <tr>
+        <th colspan="2"></th>
+    </tr>
+</table>​
